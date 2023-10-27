@@ -20,7 +20,7 @@ body {
 /* Boiler plate sizing and styling for link divs */
 
 .page-link-wrapper {
-	font-family: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif !important;
 	color: rgb(213, 213, 213);
 	width: calc(100vw / 3);
 	height: 100vh;
@@ -68,9 +68,10 @@ body {
 /* Animations for hovering on links */
 
 .page-link:hover > h1 {
-	font-size: 2.4em;
+	font-size: 3em;
 }
 
 .page-link:hover {
-	background-color: rgba(0, 0, 0, 0.4);
+	background: rgb(0, 0, 0);
+	background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.6) 100%);
 }

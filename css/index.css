@@ -24,7 +24,7 @@ body {
 .page-link-wrapper {
 	font-family: "Raleway", sans-serif !important;
 	color: rgb(213, 213, 213);
-	width: calc(100vw / 3);
+	width: calc(100vw / 4);
 	height: 100vh;
 	transition: 0.5s ease;
 }
@@ -48,7 +48,12 @@ body {
 	background-image: url("../img/monitor.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 30%;
+}
+
+.link-3 {
+	background-image: url("../img/monitor.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* Center the title text and tint the background */
@@ -79,19 +84,60 @@ body {
 	background: rgb(0, 0, 0);
 	background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.6) 100%);
 	animation: grow 0.5s ease;
-	width: 40vw;
+	width: 35vw;
 }
 
 .page-link-wrapper:hover {
 	animation: grow 0.5s ease;
-	width: 40vw;
+	width: 35vw;
 }
+
+/* Create basic animation for growing the tiles */
 
 @keyframes grow {
 	0% {
-		width: calc(100vw / 3);
+		width: calc(100vw / 4);
 	}
 	100% {
-		width: 40vw;
+		width: 35vw;
+	}
+}
+
+/* Media query for smaller device */
+
+@media (max-width: 1000px) {
+	/* change the flex-direction to column such that the tiles are stacked vertically not horizontally*/
+
+	body {
+		height: auto;
+		flex-direction: column;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+
+	/* As they are now vertical the width doesn't need to be adjusted but the height needs to be */
+
+	.page-link-wrapper,
+	.page-link {
+		width: 100vw;
+		height: 35vh;
+	}
+
+	/* change the hover behavior for smaller devices */
+
+	.page-link-wrapper:hover {
+		width: 100vw;
+		animation: none;
+	}
+
+	.page-link:hover {
+		width: 100vw;
+		animation: none;
+		background: rgb(0, 0, 0);
+		background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.6) 100%);
+	}
+
+	.page-link:hover > h1 {
+		font-size: 3em;
 	}
 }

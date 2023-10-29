@@ -1,3 +1,7 @@
+:root {
+	--transition-time: 0.7s;
+}
+
 /* Boiler plate styling */
 
 * {
@@ -26,44 +30,45 @@ body {
 	color: rgb(213, 213, 213);
 	width: calc(100vw / 4);
 	height: 100vh;
-	transition: 0.5s ease;
+	transition: var(--transition-time) ease-out;
 }
 
 /* Setting background images for each div */
 
 .link-1 {
-	background-image: url("../img/mobo.jpg");
+	background-image: url("../img/mobo.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .link-2 {
-	background-image: url("../img/program.jpg");
+	background-image: url("../img/program.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 30%;
 }
 
 .link-3 {
-	background-image: url("../img/monitor.jpg");
+	background-image: url("../img/monitor.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-.link-3 {
-	background-image: url("../img/monitor.jpg");
+.link-4 {
+	background-image: url("../img/plasma.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 45%;
 }
 
 /* Center the title text and tint the background */
 
 .page-link {
 	cursor: pointer;
-	transition: 0.5s ease;
+	transition: var(--transition-time) ease-out;
 	display: grid;
 	place-items: center;
-	transition: 0.5s ease;
+	transition: var(--transition-time) ease-out;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.6); /* Add a tint to the background-image */
@@ -71,7 +76,7 @@ body {
 
 .page-link h1 {
 	font-size: 2.2em;
-	transition: 0.5s ease;
+	transition: var(--transition-time) ease-out;
 }
 
 /* Animations for hovering on links */
@@ -83,12 +88,12 @@ body {
 .page-link:hover {
 	background: rgb(0, 0, 0);
 	background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.15) 35%, rgba(0, 0, 0, 0.6) 100%);
-	animation: grow 0.5s ease;
+	animation: grow var(--transition-time) ease-out;
 	width: 35vw;
 }
 
 .page-link-wrapper:hover {
-	animation: grow 0.5s ease;
+	animation: grow var(--transition-time) ease-out;
 	width: 35vw;
 }
 

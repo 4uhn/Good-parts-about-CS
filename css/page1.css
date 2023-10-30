@@ -11,6 +11,7 @@ body {
 	font-family: "Lora", serif;
 	font-style: normal;
 	font-weight: 300;
+	color :#292929
 	overflow-x: hidden;
 }
 
@@ -299,13 +300,6 @@ a:focus {
 	background: url("../img/mobo.webp") no-repeat;
 }
 
-.main-gallery {
-	background: url("../images/gallery-bg.jpg") no-repeat;
-}
-
-.main-contact {
-	background: url("../images/contact-bg.jpg") no-repeat;
-}
 
 #particles-js {
 	position: absolute;
@@ -520,6 +514,13 @@ a:focus {
 	color: #ffffff;
 }
 
+.caption {
+	font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 24px;
+	text-align: center;
+}
+
 /*---------------------------------------
    Blog Single Post section              
 -----------------------------------------*/
@@ -529,9 +530,11 @@ a:focus {
 }
 
 #blog-single-post .blog-single-post-image .col-md-4 {
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 22px;
+	display: block;
+	margin-left : auto;
+	margin-right : auto;
+	width : 50%;
+	
 }
 
 #blog-single-post .blog-single-post-image img {

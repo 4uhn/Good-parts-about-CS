@@ -33,7 +33,7 @@ body {
 	transition: var(--transition-time) ease-out;
 }
 
-/* Setting background images for each div */
+/* Setting background img for each div */
 
 .link-1 {
 	background-image: url("../img/mobo.webp");
@@ -64,6 +64,8 @@ body {
 /* Center the title text and tint the background */
 
 .page-link {
+	text-decoration: none;
+	color: rgb(213, 213, 213);
 	cursor: pointer;
 	transition: var(--transition-time) ease-out;
 	display: grid;

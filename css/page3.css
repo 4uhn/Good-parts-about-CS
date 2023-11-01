@@ -11,7 +11,7 @@ body {
 	font-family: "Lora", serif;
 	font-style: normal;
 	font-weight: 300;
-	color :#292929;
+	color: #292929;
 	overflow-x: hidden;
 }
 
@@ -300,7 +300,6 @@ a:focus {
 	background: url("../img/jpg/Page3_images/title.jpg") no-repeat;
 }
 
-
 #particles-js {
 	position: absolute;
 	width: 100%;
@@ -516,8 +515,8 @@ a:focus {
 
 .caption {
 	font-size: 14px;
-    letter-spacing: .3px;
-    line-height: 24px;
+	letter-spacing: 0.3px;
+	line-height: 24px;
 	text-align: center;
 }
 
@@ -531,10 +530,9 @@ a:focus {
 
 #blog-single-post .blog-single-post-image .col-md-4 {
 	display: block;
-	margin-left : auto;
-	margin-right : auto;
-	width : 50%;
-	
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 #blog-single-post .blog-single-post-image img {

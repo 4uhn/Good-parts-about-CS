@@ -64,6 +64,7 @@ body {
 /* Center the title text and tint the background */
 
 .page-link {
+	text-align: center;
 	text-decoration: none;
 	color: rgb(213, 213, 213);
 	cursor: pointer;

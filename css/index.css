@@ -36,28 +36,28 @@ body {
 /* Setting background img for each div */
 
 .link-1 {
-	background-image: url("../img/jpg/page1/hero.jpg");
+	background-image: url("../img/jpg/page1/hero.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 55%;
 }
 
 .link-2 {
-	background-image: url("../img/jpg/page2/hero.jpg");
+	background-image: url("../img/jpg/page2/hero.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 60%;
 }
 
 .link-3 {
-	background-image: url("../img/jpg/Page3_images/title.jpg");
+	background-image: url("../img/jpg/Page3_images/title.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 60%;
 }
 
 .link-4 {
-	background-image: url("../img/jpg/page4/page4-hero.jpg");
+	background-image: url("../img/jpg/page4/page4-hero.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 45%;
